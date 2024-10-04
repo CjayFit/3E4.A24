@@ -1,0 +1,18 @@
+meta {
+  name: [409] - Create Planet
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/planets
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id":5,
+    "name":"Planète Yannick"
+  }
+}

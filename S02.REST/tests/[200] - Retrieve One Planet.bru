@@ -1,0 +1,16 @@
+meta {
+  name: [200] - Retrieve One Planet
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3000/planets/b6249889-88ba-4641-9bde-029a603c8dc9
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 200
+  res.body: isJson
+}

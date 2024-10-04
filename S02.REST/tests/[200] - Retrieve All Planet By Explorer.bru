@@ -1,0 +1,16 @@
+meta {
+  name: [200] - Retrieve All Planet By Explorer
+  type: http
+  seq: 10
+}
+
+get {
+  url: http://localhost:3000/explorers/Skadex/planets
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 200
+  res.body: isArray 
+}

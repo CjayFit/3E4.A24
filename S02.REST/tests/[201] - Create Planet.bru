@@ -1,0 +1,26 @@
+meta {
+  name: [201] - Create Planet
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/planets
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "position": {
+      "x": 600,
+      "y": 234,
+      "z": 43
+    },
+    "name": "Yanniko IV",
+    "discoveredBy": "YellowKiwi",
+    "discoveryDate": "2024-09-19",
+    "temperature": 256,
+    "satellites": []
+  }
+}
